@@ -28,5 +28,14 @@ while my_bool:
         my_bool = False
 
 print("\nTotal = ", total)
-print("Thank you, see you later.....")
+
+money = int(input("Enter your money : "))
+
+if money < total:
+    print("Your money is not enough")
+else:
+    money_changes = money - total
+    print("Money Changes : ", money_changes)
+    
+print("\nThank you, see you later.....")
 
