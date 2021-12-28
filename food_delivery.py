@@ -2,9 +2,10 @@ print("Welcome to Food Delivery App")
 print("by Defa Mulya Pratama")
 
 print("==========================")
-print("1. Burger\t: 1000")
-print("2. Pizza\t: 2000")
-print("3. Hotdog\t: 3000")
+print("1. Burger\t\t: 1000")
+print("2. Pizza\t\t: 2000")
+print("3. Hotdog\t\t: 3000")
+print("4. French Fries\t: 4000")
 
 total = 0
 my_bool = True
@@ -19,6 +20,9 @@ while my_bool:
         total += price
     if option == "3":
         price = 3000 * amount
+        total += price
+    if option == "4":
+        price = 4000 * amount
         total += price
 
     q_order = input("\nDo you want to add order?(y/n) : ")
