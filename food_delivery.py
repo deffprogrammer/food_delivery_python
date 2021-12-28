@@ -2,34 +2,36 @@ print("Welcome to Food Delivery App")
 print("by Defa Mulya Pratama")
 
 print("==========================")
-print("1. Burger\t\t: 1500")
-print("2. Chicken\t\t: 2500")
-print("3. Hotdog\t\t: 3500")
-print("4. French Fries\t: 4500")
+print("1. Burger\t\t: 1000")
+print("2. Pizza\t\t: 2000")
+print("3. Hotdog\t\t: 3000")
+print("4. French Fries\t: 4000")
 
 burger = 0
 pizza = 0
 hotdog = 0
+f_fries = 0
 total = 0
 my_bool = True
 while my_bool:
     option = input("Choose using number : ")
     amount = int(input("How many do you want to buy? : "))
     if option == "1":
-        price = 1500 * amount
+        price = 1000 * amount
         total += price
         burger += amount
     if option == "2":
-        price = 2500 * amount
+        price = 2000 * amount
         total += price
         pizza += amount
     if option == "3":
-        price = 3500 * amount
-        total += price
-    if option == "4":
-        price = 4500 * amount
+        price = 3000 * amount
         total += price
         hotdog += amount
+    if option == "4":
+        price = 4000 * amount
+        total += price
+        f_fries += amount
 
     q_order = input("\nDo you want to add order?(y/n) : ")
     if q_order.lower() == "y":
@@ -60,6 +62,7 @@ print("\nList order")
 print(burger, "Burger =", (burger * 1000))
 print(pizza, "Pizza =", (pizza * 2000))
 print(hotdog, "Hotdog =", (hotdog * 3000))
+print(f_fries, "French Fries =", (f_fries * 4000))
 print("Order method =", order_method)
 if order_method == "online":
     print("Expedition = ", expedition)
